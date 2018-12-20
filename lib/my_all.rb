@@ -7,5 +7,11 @@ def my_all?(collection)
     returnedArr << yield(collection[i])
     i += 1
   end
-  returnedArr
+
+  if returnedArr.include?(false)
+    false
+  else
+    true
+  end
+
 end
